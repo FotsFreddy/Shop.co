@@ -57,7 +57,7 @@ const footerPayments: Array<string> = [
 
 export default function Footer() {
   return (
-    <section className="relative mt-28">
+    <section className="relative mt-32">
       <NewsLetterForm />
       <footer
         className="h-full bg-[#F0F0F0] grid grid-flow-row content-center pt-34 pb-12 gap-4 px-4
@@ -117,7 +117,7 @@ function NewsLetterForm() {
         </div>
         <SubmitButton
           buttonText="Subscribe to Newsletter"
-          buttonStyle="bg-white text-black rounded-full p-2 py-3 text-nowrap w-full"
+          buttonStyle="bg-white text-black rounded-full p-2 py-3 text-nowrap w-full cursor-pointer transition-transform duration-100 active:scale-95"
         />
       </form>
     </div>
