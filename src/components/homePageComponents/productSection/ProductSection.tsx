@@ -68,16 +68,16 @@ const topSelling: Array<ProductCardProps> = [
 export default function ProductSection({ sectionTitle }: ProductSectionProps) {
   const arrayToMap = sectionTitle === "NEW ARRIVALS" ? newArrivals : topSelling;
   return (
-    <section className="pl-4 md:px-12">
+    <section>
       <h2 className="text-4xl font-[1000] text-center">{sectionTitle}</h2>
-      <div className="grid grid-flow-col gap-5 py-4 overflow-x-auto snap-x snap-proximity scroll-pr-4 md:pt-10 md:content-center">
+      <div className="grid grid-flow-col gap-5 px-4 py-4 overflow-x-auto snap-x snap-proximity scroll-pr-4 md:pb-7 md:pt-10 md:px-12 md:content-center">
         {arrayToMap.map((item, index) => {
           return <ProductCard key={index} {...item} />;
         })}
       </div>
       <Link to={"/Category"}>
         <button
-          className="w-full text-nowrap px-16 py-2  rounded-full border-gray-400 border-2 block m-auto cursor-pointer relative overflow-hidden
+          className="w-[95%] text-nowrap px-16 py-2 rounded-full border-gray-400 border-2 block m-auto cursor-pointer relative overflow-hidden
                      sm:w-min
                      hover:text-white
                      after:bg-black after:-z-10 after:absolute after:left-0 after:top-0 after:w-full after:h-full after:transform after:transition-transform after:-translate-x-[110%] after:duration-500 after:ease-in-out hover:after:translate-x-0"

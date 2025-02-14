@@ -7,7 +7,7 @@ export default function HomePage() {
     <>
       <Header />
       <ProductSection sectionTitle={"NEW ARRIVALS"} />
-      <hr className="border-gray-300 mx-4 my-10 md:my-20 md:mx-12 "/>
+      <hr className="border-gray-300 mx-4 my-10 md:my-14 md:mx-12 "/>
       <ProductSection sectionTitle={"TOP SELLING"} />
       <Footer />
     </>
