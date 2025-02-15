@@ -1,3 +1,4 @@
+import DressCategorySection from "../../components/homePageComponents/dressCategorySection/DressCategorySection";
 import ProductSection from "../../components/homePageComponents/productSection/ProductSection";
 import ReviewSection from "../../components/homePageComponents/reviewSection/ReviewSection";
 import Footer from "../../components/ui/footer/Footer";
@@ -10,6 +11,7 @@ export default function HomePage() {
       <ProductSection sectionTitle={"NEW ARRIVALS"} />
       <hr className="border-gray-300 mx-4 my-10 md:my-14 md:mx-12 "/>
       <ProductSection sectionTitle={"TOP SELLING"} />
+      <DressCategorySection />
       <ReviewSection />
       <Footer />
     </>
