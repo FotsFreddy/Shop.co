@@ -10,7 +10,7 @@ export interface ProductCardProps{
 export default function ProductCard({imageSrc, title, price, oldPrice, rating,  discount}:ProductCardProps) {
   return (
     <figure className="snap-center justify-self-center">
-      <div className="w-[200px] h-[200px] rounded-3xl overflow-hidden mb-1 md:w-[320px] md:h-[320px]">
+      <div className="w-[200px] h-[200px] rounded-3xl overflow-hidden mb-1 cursor-pointer md:w-[320px] md:h-[320px]">
         <img src={imageSrc} alt={title} className="w-full h-full transition-all duration-300 hover:scale-110"/>
       </div>
       <figcaption>
