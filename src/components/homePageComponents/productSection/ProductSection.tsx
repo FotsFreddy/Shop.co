@@ -75,12 +75,12 @@ export default function ProductSection({ sectionTitle }: ProductSectionProps) {
           return <ProductCard key={index} {...item} />;
         })}
       </div>
-      <Link to={"/Category"}>
+      <Link to={"/category"}>
         <button
-          className="w-[95%] text-nowrap px-16 py-2 rounded-full border-gray-400 border-2 block m-auto cursor-pointer relative overflow-hidden
+          className="w-[95%] text-nowrap px-16 py-2 rounded-full border-gray-400 border-2 block m-auto cursor-pointer relative overflow-hidden transition
                      sm:w-min
                      hover:text-white
-                     after:bg-black after:-z-10 after:absolute after:left-0 after:top-0 after:w-full after:h-full after:transform after:transition-transform after:-translate-x-[110%] after:duration-500 after:ease-in-out hover:after:translate-x-0"
+                     after:bg-black after:-z-10 after:absolute after:left-0 after:top-0 after:w-full after:h-full after:-translate-x-[110%] after:duration-500 after:ease-in-out hover:after:translate-x-0"
         >
           View All
         </button>
