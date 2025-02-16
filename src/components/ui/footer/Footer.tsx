@@ -60,8 +60,8 @@ export default function Footer() {
     <section className="relative mt-32">
       <NewsLetterForm />
       <footer
-        className="h-full bg-[#F0F0F0] grid grid-flow-row content-center pt-34 pb-12 gap-4 px-4
-                        sm:pt-32 sm:pb-12 lg:px-12 md:grid-cols-5 md:px-6 md:justify-items-end"
+        className="h-full bg-[#F0F0F0] grid grid-flow-row content-center pt-36 pb-12 gap-4 px-4
+                  sm:pt-32 sm:pb-12 lg:px-12 md:grid-cols-5 md:px-6 md:justify-items-end"
       >
         <div className="col-span-2 md:col-span-1">
           <h3 className="text-3xl font-[1000]">SHOP.CO</h3>
@@ -101,14 +101,14 @@ function NewsLetterForm() {
   return (
     <div
       className="bg-black p-4 text-white flex flex-col gap-3 justify-center rounded-2xl mx-4 absolute right-0 left-0 -translate-y-1/2 
-                      sm:flex-row sm:justify-between sm:items-center sm:p-10 md:mx-12"
+                  sm:flex-row sm:justify-between sm:items-center sm:p-10 md:mx-12"
     >
       <h1 className="text-3xl font-extrabold md:max-w-[50%] md:text-4xl lg:text-5xl">
         STAY UPTO DATE ABOUT OUR LATEST OFFERS
       </h1>
       <form action="" method="post" className="md:w-1/3 w-full">
         <div className="relative">
-          <Mail className="text-gray-500 absolute left-4 top-3" />
+          <Mail className="text-gray-500 absolute left-4 top-3 pointer-events-none" />
           <Input
             inputType="email"
             inputPlaceholder="Enter your email address"
