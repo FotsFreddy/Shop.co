@@ -1,8 +1,8 @@
 export default function Banner() {
   return (
     <div
-      className="flex gap-5 justify-center flex-wrap p-4 bg-black text-white text-nowrap mb-10
-        md:p-12 md:justify-between md:col-span-2"
+      className="flex max-lg:justify-center flex-wrap gap-5 p-4 bg-black mb-20
+                md:gap-x-7 lg:justify-around md:py-12"
     >
       <svg
         width="167"
