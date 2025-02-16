@@ -16,8 +16,8 @@ export default function Header() {
   return (
     <header className={`sticky top-0 z-50 bg-white shadow-md`}>
       <Banner />
-      <div className="flex justify-between items-center p-2 md:justify-center md:gap-12">
-        <div className="flex gap-3 items-center justify-center text-nowrap sm:gap-3 md:gap-5">
+      <div className="flex justify-between items-center px-4 py-5 md:justify-center md:gap-9 lg:gap-12 lg:px-12">
+        <div className="flex gap-3 items-center justify-center text-nowrap md:gap-6 lg:gap-12">
           <Menu
             className="z-50 cursor-pointer active:scale-90 sm:w-9 sm:h-w-9 md:hidden"
             onClick={() => setDropDown(!dropDown)}
@@ -28,7 +28,7 @@ export default function Header() {
           <MobileNavBar dropDown={dropDown} />
           <NavBar />
         </div>
-        <div className="flex items-center justify-center gap-3 sm:w-2/5">
+        <div className="flex items-center justify-center gap-3 sm:w-2/5 md:w-[55%]">
           <SearchForm />
           <Link to={"/Category"}>
             <ShoppingCart
@@ -61,7 +61,7 @@ function Banner() {
 function NavBar() {
   return (
     <nav className="hidden md:block">
-      <ul className="flex gap-5">
+      <ul className="flex gap-3 lg:gap-10">
         <li>
           <Navitem NavItem="Shop" />
         </li>
@@ -115,7 +115,7 @@ function Navitem({ NavItem }: NavItemProps) {
 function SearchForm() {
   const [isVisible, setIsVisible] = useState(false); {/* invisible on mobile */}
   return (
-    <form action="" method="get" className="sm:w-full">
+    <form action="" method="get" className="w-full">
       <div className="relative">
         {/* search icon */}
         <Search
